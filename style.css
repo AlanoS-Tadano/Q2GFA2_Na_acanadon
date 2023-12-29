@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url(Media/Images/Stars.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+}
+
+main h1{
+    color: white;
+    position: static;
+    text-align: center;
+    margin-top: 20vh;
+    text-shadow: 5px 5px black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.heavenlyb{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 90;
+}
+
+.heavenlyb2{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 90;
+}
+
+#Sol{
+    background-image: url(Media/Gifs/Sol.gif);
+    width: 512px;
+    height: 512px;
+    position: absolute;
+    transform: translate(-80px, 0px);
+}
+
+#Terra{
+    background-image: url(Media/Gifs/Miar.gif);
+    width: 256px;
+    height: 256px;
+    animation: Terramotion 60s linear infinite;
+}
+
+@keyframes Terramotion {
+    0%{transform: translate(-400px, 0px);}
+    50% {transform: translate(2400px, 400px);}
+    100% {transform: translate(-2400px, -400px); z-index: 91;}
+}
+
+#Jovis{
+    background-image: url(Media/Gifs/Jupiter.gif);
+    width: 128px;
+    height: 128px;
+    animation: Jovismotion 10s linear infinite;
+}
+
+@keyframes Jovismotion {
+    0%{transform: translate(2400px, -400px); z-index: 89;}
+    50% {transform: translate(-2400px, 800px);}
+    100% {transform: translate(2400px, -400px); z-index: 93;}
+}
+
+#Andromeda{
+    background-image: url(Media/Gifs/RIM-133.gif);
+    width: 256px;
+    height: 256px;
+    animation: RIMmotion 600s infinite;
+}
+
+@keyframes RIMmotion {
+    0%{transform: scale(0.01); z-index: 88;}
+    100% {transform: scale(1); z-index: 88;}
+}
+
+#Mars{
+    background-image: url(Media/Gifs/Lava\ World.gif);
+    width: 128px;
+    height: 128px;
+    animation: MARSmotion 12s infinite;
+}
+
+@keyframes MARSmotion {
+
+    0%{transform: translate(0px, 0px) rotate(0deg)}
+    50%{transform: translate(475px, 175px) rotate(359deg) skew(20deg);}
+    100%{z-index: 91;}
+}
